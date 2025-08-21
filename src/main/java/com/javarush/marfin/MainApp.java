@@ -12,11 +12,11 @@ public class MainApp {
             this.alphabet =  alphabet;
         }
         public String encrypt(String text, int key) {
-
+            return null;
         }
 
         public String decrypt(String text, int key) {
-
+            return null;
         }
     }
 
@@ -28,6 +28,6 @@ public class MainApp {
 
 
     public static void main(String[] args) {
-
+        System.out.println("Hello");
     }
 }
