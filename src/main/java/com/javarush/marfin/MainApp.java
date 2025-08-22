@@ -1,15 +1,14 @@
 package com.javarush.marfin;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class MainApp {
 
-    private final static char[] ALPHABET = {'а', 'б', 'в', 'г', 'д', 'е', 'ж', 'з',
-            'и','к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ',
-            'ъ', 'ы', 'ь', 'э', 'я', '.', ',', '«', '»', '"', '\'', ':', '!', '?', ' '};
-
-    public class Chipher {
-        char[] alphabet;
-        public Chipher(char[] alphabet) {
-            this.alphabet =  alphabet;
+    public static class Chipher {
+        Map<Character, Integer> alphabetMap;
+        public Chipher(Map<Character, Integer> alphabetMap) {
+            this.alphabetMap =  alphabetMap;
         }
         public String encrypt(String text, int key) {
             return null;
@@ -28,6 +27,6 @@ public class MainApp {
 
 
     public static void main(String[] args) {
-        System.out.println("Hello");
+        Chipher ch = new Chipher(Alphabet.ALPHABET_MAP);
     }
 }
